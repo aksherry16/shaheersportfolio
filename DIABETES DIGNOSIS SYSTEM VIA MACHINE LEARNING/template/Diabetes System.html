@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DIABETES PREDICTION</h1>
+        <form id="diabetesForm" method="post" action="">
+            <div>
+                <label for="pregnancies">Pregnancies:</label>
+                <input type="number" id="pregnancies" name="pregnancies" required>
+
+            </div>
+            <div>
+                <label for="glucose">Glucose:</label>
+                <input type="number" id="glucose" name="glucose" required>
+            </div>
+
+            <div>
+                <label for="bloodPressure">Blood Pressure:</label>
+                <input type="number" id="bloodPressure" name="bloodPressure" required>
+            </div>
+
+            <div>
+                <label for="skinThickness">Skin Thickness:</label>
+                <input type="number" id="skinThickness" name="skinThickness" required>
+            </div>
+
+            <div>
+                <label for="insulin">Insulin:</label>
+                <input type="number" id="insulin" name="insulin" required>
+            </div>
+
+            <div> <label for="bmi">BMI:</label>
+                <input type="number" step="0.1" id="bmi" name="bmi" required>
+            </div>
+
+            <div>
+                <label for="dpf">Diabetes Pedigree Function:</label>
+                <input type="number" step="0.001" id="dpf" name="dpf" required>
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+            </div>
+            <button type="button" id="btn">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="/static/results.js"></script>
+</body>
+</html>
+
