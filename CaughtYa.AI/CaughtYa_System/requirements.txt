@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+streamlit
+sentence-transformers
+transformers
+torch
+datasets
+pydantic
+requests
+scikit-learn
+nltk
+textstat
